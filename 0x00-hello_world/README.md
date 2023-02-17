@@ -5,3 +5,4 @@ Write a C program that prints string with puts
 Write a C program that prints string with printf
 Write a C program that prints the size of various types on the computer
 Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file
+Write a C program that prints string with write
