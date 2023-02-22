@@ -6,3 +6,4 @@ the program check for lowercase and uppercase character
 the program print the sign of number
 the program print the absolute value of number
 print the last digit number
+prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
