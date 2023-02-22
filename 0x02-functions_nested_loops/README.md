@@ -3,3 +3,4 @@ the program print alphabet in lower case
 the program print 10 ti;es the alphabet
 the program check for lowercase character
 the program check for lowercase and uppercase character
+the program print the sign of number
