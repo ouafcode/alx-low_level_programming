@@ -4,3 +4,4 @@ the program print 10 ti;es the alphabet
 the program check for lowercase character
 the program check for lowercase and uppercase character
 the program print the sign of number
+the program print the absolute value of number
