@@ -11,7 +11,7 @@ int main(void)
 	long  x1 = 1, x2 = 2, nextval;
 
 	printf("%ld, ", x1);
-	printf("%ld,", x2);
+	printf("%ld", x2);
 	for (i = 2; i < 50; i++)
 	{
 		nextval = x2;
