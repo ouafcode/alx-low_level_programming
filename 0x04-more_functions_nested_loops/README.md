@@ -4,3 +4,4 @@ Task 2 : create functions that multiplies two integers
 Task 3 : functions that prints numbers from 0 to 9
 Task 4 : functions that prints numbers from 0 to 9 without 2 and 4 
 Task 5 : function that print numbers 10 times from 0 to 14
+Task 6 : function that draws a straight line in the terminal.
