@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_line - finctions that draws a straight line in the terminal
+ * print_square - finctions that draws a straight line in the terminal
  * @n: input value
  * Return: Always 0.
  */
