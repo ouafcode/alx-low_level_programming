@@ -12,7 +12,7 @@ int main(void)
 	n = nbr / 2;
 	for (i = 2; i < n; i++)
 	{
-		if ((nbr % i == 0) && i != nbr)
+		if (nbr % i == 0 && i != nbr)
 		{
 			printf("%ld ", i);
 			nbr = nbr / i;
