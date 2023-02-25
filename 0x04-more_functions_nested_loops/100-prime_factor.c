@@ -9,21 +9,18 @@ int main(void)
 {
 	long i = 2, nbr = 612852475143;
 
-	while (i < (nbr /2))
+	while (nbr != 1)
 	{
-	if ((nbr % 2) == 0)
-	{
-	nbr /= 2;
-	continue;
+		if (nbr % i == 0)
+		{
+			while(nbr % i == 0)
+			{
+				printf("%ld ", i);
+				nbr = nbr / i;
+			}
+		}
+		i++;
 	}
-	for (i = 3; i < (nbr / 2); i += 2)
-	{
-	if ((nbr % i) == 0)
-	{
-	nbr /= i;
-	}
-	}
-	}
-	printf("%ld \n", nbr);
+	printf("\n");
 	return (0);
 }
