@@ -16,9 +16,11 @@ int main(void)
 			nbr /= 2;
 			continue;
 		}
-		for (i = 3; i < (nbr / 2); nbr += 2)
+		for (i = 3; i < (nbr / 2); i += 2)
 		{
+
 			if ((nbr % i) == 0)
+			printf("%ld\n", i);
 			nbr /= i;
 		}
 	}
