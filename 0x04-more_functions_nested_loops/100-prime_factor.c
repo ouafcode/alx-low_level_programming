@@ -7,24 +7,23 @@
  */
 int main(void)
 {
-	long int i, n, nbr = 612852475143;
+	long i = 2, nbr = 612852475143;
 
-	n = nbr / 2;
-	for (i = 2; i < n; i++)
+	while (i < (nbr /2))
 	{
-		if (nbr % i == 0 && i != nbr)
-		{
-			printf("%ld ", i);
-			nbr = nbr / i;
-		}
-		else
-			if (i == nbr)
-			{
-				printf("%ld ", i);
-				break;
-			}
+	if ((nbr % 2) == 0)
+	{
+	nbr /= 2;
+	continue;
 	}
-	printf("\n");
-
+	for (i = 3; i < (nbr / 2); i += 2)
+	{
+	if ((nbr % i) == 0)
+	{
+	nbr /= i;
+	}
+	}
+	}
+	printf("%ld \n", nbr);
 	return (0);
 }
