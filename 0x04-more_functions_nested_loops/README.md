@@ -9,4 +9,5 @@ Task 7 : function that draws a diagonal line on the terminal.
 Task 8 : function that prints a square, followed by a new line.
 Task 9 : The “Fizz-Buzz test” is an interview question designed to help filter out the 99.5% of programming job candidates who can’t seem to program their way out of a wet paper bag.
 Task10 :function that prints a triangle
-Task11 :finds and prints the largest prime factor of the number 
+Task11 :finds and prints the largest prime factor of the number
+Task12 :function that prints an integer 
