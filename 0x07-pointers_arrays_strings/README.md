@@ -1,2 +1,4 @@
-Write a function that fills memory with a constant byte
-Write a function that copies memory area.
+Task0: Write a function that fills memory with a constant byte.
+Task1: Write a function that copies memory area.
+Task2: Write a function that locates a character in a string.
+Task3: Write a function that gets the length of a prefix substring.
