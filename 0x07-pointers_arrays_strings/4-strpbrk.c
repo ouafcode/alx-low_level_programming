@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strpbrik - Write a function that searches a string
+ * _strpbrk - Write a function that searches a string
  * @s: input string
  * @accept: input string
  *
@@ -17,7 +17,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[j] == accept[i])
 			{
-				return (s+j);
+				return (s + j);
 			}
 		}
 	}
