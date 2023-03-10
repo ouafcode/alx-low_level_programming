@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - program that generate random valid 
- * 
+ * main - program that generate random valid
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -28,5 +28,5 @@ int main(void)
 			break;
 		}
 	}
-	return(0);
+	return (0);
 }
