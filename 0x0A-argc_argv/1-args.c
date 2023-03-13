@@ -7,7 +7,12 @@
  */
 int __attribute__ ((unused)) main(int argc, char *argv[])
 {
-	printf("%d\n", argc);
-	(void)argv;
+	char **ptr;
+	int len = 0;
+
+	for (ptr = argv + 1; *ptr != NULL; ptr++)
+		len = len + 1;
+	printf("%d\n", len);
+	(void)argc;
 	return (0);
 }
