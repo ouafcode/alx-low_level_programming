@@ -14,19 +14,19 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	/*Allocate memory for row*/
-	ptr = (int **)malloc(width * sizeof(int *));
+	/*Allocate memory for height*/
+	ptr = malloc(height * sizeof(int *));
 	/*check memory validity*/
 	if (ptr == NULL)
 		return (NULL);
-	/*Allocate memory for collumn*/
-	for (i = 0; i < width; i++)
+
+	for (i = 0; i < height; i++)
 	{
-		ptr[i] = (int *)malloc(height * sizeof(int));
+		ptr[i] = (int *)malloc(width * sizeof(int));
 		/*check memory validity*/
 		if (ptr[i] == NULL)
 		{
-			for (i = 0; i < width; i++)
+			for (; i >= 0; i--)
 			{
 				free(ptr[i]);
 			}
@@ -35,9 +35,9 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	/*Initialized 2D array*/
-	for (i = 0; i < width; i++)
+	for (i = 0; i < height; i++)
 	{
-		for (j = 0; j < height; j++)
+		for (j = 0; j < width; j++)
 		{
 			ptr[i][j] = 0;
 		}
