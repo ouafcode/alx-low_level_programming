@@ -5,6 +5,7 @@
  * *string_nconcat -  function that concatenates two strings.
  * @s1: input string
  * @s2: input string
+ * @n: input size
  * Return: return pointer point to a newly allocated space in memory
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -26,15 +27,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		y++;
 	}
-	ptr = malloc(sizeof(char) * (n));
+	if (n >= y)
+		n = y;
+	ptr = malloc(n);
 	if (ptr == NULL)
 		return (NULL);
 	for (i = 0; i < x; i++)
 	{
 		ptr[i] = s1[i];
 	}
-	if (n >= y)
-		n = y;
 	for (i = x; i < n; i++)
 	{
 		for (j = 0; j < n; j++)
