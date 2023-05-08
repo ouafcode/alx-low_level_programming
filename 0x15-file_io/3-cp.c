@@ -19,7 +19,7 @@ char *buff_create(char *filename)
 
 	if (buff == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 		exit(99);
 	}
 	return (buff);
@@ -79,7 +79,7 @@ int main(int argc, char *argv[])
 		}
 		rd = read(from, buff, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
-	} while (r > 0);
+	} while (rd > 0);
 	free(buff);
 	file_cl(from);
 	file_cl(to);
