@@ -80,6 +80,7 @@ int main(int argc, char *argv[])
 		rd = read(from, buff, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
 	} while (rd > 0);
+
 	free(buff);
 	file_cl(from);
 	file_cl(to);
