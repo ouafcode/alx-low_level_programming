@@ -24,14 +24,14 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	if (*head == NULL)
 	{
 		*head = ptr;
-		return (new);
+		return (ptr);
 	}
 	tmp = *head;
 	while (tmp->next != NULL)
 	{
 		tmp = tmp->next;
 	}
-	tmp->next = new;
-	new->prev = tmp;
-	return (new);
+	tmp->next = ptr;
+	ptr->prev = tmp;
+	return (ptr);
 }
