@@ -4,7 +4,7 @@
  * sum_dlistint - sum of all the data (n) of a dlistint_t linked list
  * @head: ptr to the head of list
  *
- * Returm: return 0 if list empty
+ * Return: return 0 if list empty
  */
 
 int sum_dlistint(dlistint_t *head)
