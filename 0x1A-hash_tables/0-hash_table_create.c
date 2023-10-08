@@ -5,7 +5,7 @@
  * @size: size of an array.
  *
  * Return: NULL if it fail
- * 
+ *
  */
 
 hash_table_t *hash_table_create(unsigned long int size)
