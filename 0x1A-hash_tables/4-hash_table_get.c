@@ -1,10 +1,10 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - return the value 
+ * hash_table_get - return the value
  * @ht: pointer to the hash table
  * @key: key of value
- * 
+ *
  * Return: Null if not founded
  */
 
